@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sano Med Spa — Text Message Sign-Up</title>
+<meta name="description" content="Sign up to receive appointment reminders and updates by text message from Sano Med Spa.">
+<style>
+:root{--ac:#5b7c99;--ac-d:#4b667d;--dk:#1e2430;--bg:#faf7f4;--cm:#f3ede6;--wh:#fff;--mu:#8d8078;--bd:#eae0d8;--rd:#9a4040;--gr:#5a7a5a;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--dk);font-size:15px;line-height:1.7;padding:0 20px 56px;}
+.wrap{max-width:580px;margin:0 auto;}
+header{text-align:center;padding:42px 0 26px;border-bottom:1px solid var(--bd);}
+.wm{font-size:23px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:9px;}
+.biz{font-size:12.5px;color:var(--mu);line-height:1.75;}
+.biz a{color:var(--ac-d);text-decoration:none;}
+h1{font-size:31px;line-height:1.2;font-weight:650;margin:30px 0 12px;text-align:center;}
+.lede{font-size:15px;color:#6b5f58;text-align:center;margin-bottom:26px;}
+.card,.about,.terms{background:var(--wh);border:1px solid var(--bd);border-radius:14px;padding:28px 26px;}
+.about,.terms{margin-top:24px;}
+.fld{margin-bottom:16px;}
+label.lbl{display:block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.09em;color:var(--mu);margin-bottom:6px;}
+input{width:100%;background:var(--bg);border:1.5px solid var(--bd);border-radius:8px;padding:13px 15px;font-size:15.5px;font-family:inherit;color:var(--dk);outline:none;}
+input:focus{border-color:var(--ac);}
+.consent{display:flex;gap:12px;align-items:flex-start;background:var(--cm);border:1px solid var(--bd);border-radius:9px;padding:16px;margin:20px 0 16px;cursor:pointer;}
+.box{width:21px;height:21px;flex-shrink:0;border:2px solid var(--mu);border-radius:5px;background:var(--wh);position:relative;margin-top:1px;}
+.consent.on .box{background:var(--ac);border-color:var(--ac);}
+.consent.on .box::after{content:"\2713";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:#fff;font-size:13px;font-weight:800;}
+.consent p{font-size:12.7px;line-height:1.62;color:#6b5f58;min-width:0;}
+.consent a{color:var(--ac-d);font-weight:600;}
+button{width:100%;background:var(--ac);color:#fff;border:none;border-radius:9px;padding:16px;font-size:15.5px;font-weight:600;font-family:inherit;cursor:pointer;}
+button:hover{background:var(--ac-d);}
+.err{display:block;font-size:11.5px;color:var(--rd);margin-top:6px;}
+.ok{text-align:center;padding:12px 0;}.ok .tick{font-size:38px;color:var(--gr);}
+h2{font-size:20px;font-weight:650;margin-bottom:10px;}
+.about p{font-size:13.8px;line-height:1.72;color:#6b5f58;margin-bottom:12px;}
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:7px 16px;margin:14px 0 4px;}
+.svc div{font-size:13px;color:#6b5f58;padding-left:15px;position:relative;}
+.svc div::before{content:"\00b7";position:absolute;left:3px;color:var(--ac);font-weight:800;}
+.factrow{display:flex;gap:11px;align-items:flex-start;font-size:13.3px;color:#6b5f58;margin-top:11px;line-height:1.6;}
+.factrow>span:first-child{flex-shrink:0;}.factrow>span:last-child{min-width:0;}
+.factrow b{color:var(--dk);font-weight:600;}.factrow a{color:var(--ac-d);font-weight:600;}
+.terms .sub{font-size:12.5px;color:var(--mu);margin-bottom:10px;}
+dt{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--mu);margin-top:15px;}
+dd{font-size:13.5px;line-height:1.65;color:#6b5f58;}dd a{color:var(--ac-d);font-weight:600;}
+.bubble{background:var(--cm);border:1px solid var(--bd);border-radius:12px;padding:11px 14px;font-size:12.8px;line-height:1.55;color:#6b5f58;margin-top:8px;}
+footer{text-align:center;font-size:11.5px;color:var(--mu);line-height:1.75;margin-top:24px;}
+footer a{color:var(--ac-d);}
+@media(max-width:520px){h1{font-size:26px;}.card,.about,.terms{padding:22px 19px;}.svc{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="wm">Sano Med Spa</div>
+    <div class="biz">
+      314 Fountains Parkway, Suite D &middot; Fairview Heights, IL 62208<br>
+      <a href="tel:+16186610001">(618) 661-0001</a> &middot; <a href="mailto:hello@sanomedspa.com">hello@sanomedspa.com</a><br>
+      <a href="https://www.sanomedspa.com" target="_blank" rel="noopener">www.sanomedspa.com</a>
+    </div>
+  </header>
+
+  <h1>Appointment updates by text</h1>
+  <p class="lede">Get appointment confirmations, reminders and occasional offers from Sano Med Spa by text message.</p>
+
+  <div class="card" id="card">
+    <form id="f" novalidate>
+      <div class="fld"><label class="lbl" for="fn">First Name</label><input type="text" id="fn" autocomplete="given-name"></div>
+      <div class="fld"><label class="lbl" for="em">Email Address</label><input type="email" id="em" autocomplete="email"></div>
+      <div class="fld"><label class="lbl" for="ph">Mobile Phone Number</label><input type="tel" id="ph" autocomplete="tel" inputmode="tel" placeholder="(555) 000-0000"></div>
+
+      <!-- Unchecked by default. Consent is a standalone action, never a condition of service. -->
+      <div class="consent" id="consent" role="checkbox" aria-checked="false" tabindex="0">
+        <div class="box"></div>
+        <p>I agree to receive text messages from Sano Med Spa about appointment scheduling, reminders and promotional offers at the mobile number I provided. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. <strong>Consent is not a condition of purchase and is not required to become a customer.</strong>        <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a> &middot; <a href="/terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a></p>
+      </div>
+      <span class="err" id="e" style="display:none;"></span>
+
+      <button type="submit">Sign Up For Text Updates</button>
+    </form>
+  </div>
+
+  <div class="about">
+    <h2>About Sano Med Spa</h2>
+    <p>Sano Med Spa (a DBA of Lifetime Wellness, LLC) is a medical spa in Fairview Heights, Illinois, offering medically supervised weight loss alongside aesthetic and body treatments. Our team combines clinical knowledge with personalized care, guided by values of integrity, compassion and excellence.</p>
+    <p>Every client starts with a full body assessment so treatment is matched to your goals rather than sold off a menu. Treatments are delivered on site by trained professionals at our Fountains Parkway location.</p>
+    <h2 style="font-size:17px;margin-top:18px;">Services</h2>
+    <div class="svc">
+      <div>Medical weight loss</div>
+      <div>HydroFacials</div>
+      <div>Skin tightening</div>
+      <div>Body contouring &amp; sculpting</div>
+      <div>Tummy Rescue (RF skin tightening)</div>
+      <div>Red light therapy</div>
+      <div>Intimate wellness</div>
+      <div>Full body assessments</div>
+    </div>
+    <div class="factrow"><span>&#128205;</span><span><b>Location</b><br>314 Fountains Parkway, Suite D, Fairview Heights, IL 62208</span></div>
+    <div class="factrow"><span>&#128336;</span><span><b>Hours</b><br>By appointment. Call or text to schedule.</span></div>
+    <div class="factrow"><span>&#128222;</span><span><b>Contact</b><br><a href="tel:+16186610001">(618) 661-0001</a> &middot; <a href="mailto:hello@sanomedspa.com">hello@sanomedspa.com</a></span></div>
+    <div class="factrow"><span>&#127760;</span><span><b>Website</b><br><a href="https://www.sanomedspa.com" target="_blank" rel="noopener">www.sanomedspa.com</a></span></div>
+  </div>
+
+  <div class="terms">
+    <h2>SMS Program Details</h2>
+    <p class="sub">Sano Med Spa Appointment &amp; Updates Program</p>
+    <dl>
+      <dt>Program Description</dt>
+      <dd>Sano Med Spa sends appointment confirmations, appointment reminders, scheduling updates and occasional promotional offers to customers who opt in through the form on this page.</dd>
+      <dt>Message Frequency</dt>
+      <dd>Message frequency varies — typically 2–6 messages per month.</dd>
+      <dt>Cost</dt>
+      <dd>Message and data rates may apply.</dd>
+      <dt>Carriers</dt>
+      <dd>Carriers are not liable for delayed or undelivered messages.</dd>
+      <dt>Opt Out</dt>
+      <dd>Reply <strong>STOP</strong> to any message at any time to unsubscribe. You will receive one final message confirming you have been opted out.</dd>
+      <dt>Help</dt>
+      <dd>Reply <strong>HELP</strong> to any message for assistance, or contact us below.</dd>
+      <dt>Customer Care</dt>
+      <dd>Call or text <a href="tel:+16186610001">(618) 661-0001</a>, or email <a href="mailto:hello@sanomedspa.com">hello@sanomedspa.com</a>.</dd>
+      <dt>Privacy</dt>
+      <dd>We do not sell, rent, or share your mobile phone number or SMS opt-in consent with any third parties or affiliates for their own marketing or promotional purposes. See our <a href="/privacy.html" target="_blank" rel="noopener">Privacy Policy</a> and <a href="/terms.html" target="_blank" rel="noopener">Terms &amp; Conditions</a>.</dd>
+      <dt>Sample Messages</dt>
+      <dd>
+        <div class="bubble">Sano Med Spa: Hi Jamie, you're confirmed for Thu Aug 6 at 2:15pm at 314 Fountains Parkway, Suite D. Reply STOP to opt out, HELP for help.</div>
+        <div class="bubble">Sano Med Spa: Reminder — your appointment is tomorrow at 2:15pm. Reply R to reschedule. Reply STOP to opt out, HELP for help.</div>
+        <div class="bubble">Sano Med Spa: New client openings this month. Call (618) 661-0001 to book. Reply STOP to opt out, HELP for help.</div>
+      </dd>
+    </dl>
+  </div>
+
+  <footer>
+    <strong>Sano Med Spa</strong> &middot; 314 Fountains Parkway, Suite D, Fairview Heights, IL 62208<br>
+    (618) 661-0001 &middot; hello@sanomedspa.com &middot; <a href="https://www.sanomedspa.com" target="_blank" rel="noopener">www.sanomedspa.com</a><br>
+    <a href="/privacy.html">Privacy Policy</a> &middot; <a href="/terms.html">Terms &amp; Conditions</a>
+  </footer>
+</div>
+
+<script>
+var LEAD_WEBHOOK = "";
+var CONSENT_TEXT = "I agree to receive text messages from Sano Med Spa about appointment scheduling, reminders and promotional offers at the mobile number I provided. Message frequency varies. Message and data rates may apply. Reply STOP to opt out, HELP for help. Consent is not a condition of purchase and is not required to become a customer.";
+var on=false, c=document.getElementById("consent"), err=document.getElementById("e");
+function tg(){on=!on;c.classList.toggle("on",on);c.setAttribute("aria-checked",on?"true":"false");err.style.display="none";}
+c.addEventListener("click",tg);
+c.addEventListener("keydown",function(ev){if(ev.key===" "||ev.key==="Enter"){ev.preventDefault();tg();}});
+var ph=document.getElementById("ph");
+ph.addEventListener("input",function(){var d=this.value.replace(/\D/g,"");if(d.length>=11&&d[0]==="1")d=d.slice(1);d=d.slice(0,10);
+this.value=d.length>6?"("+d.slice(0,3)+") "+d.slice(3,6)+"-"+d.slice(6):d.length>3?"("+d.slice(0,3)+") "+d.slice(3):d.length>0?"("+d:"";});
+document.getElementById("f").addEventListener("submit",function(ev){
+  ev.preventDefault();
+  var fn=document.getElementById("fn").value.trim(), em=document.getElementById("em").value.trim(), pd=ph.value.replace(/\D/g,"");
+  function bad(m){err.textContent=m;err.style.display="block";}
+  if(!fn) return bad("Please enter your first name.");
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)) return bad("Please enter a valid email address.");
+  if(pd.length!==10) return bad("Please enter a valid 10-digit mobile number.");
+  if(!on) return bad("Please check the consent box to sign up for text messages.");
+  if(LEAD_WEBHOOK){
+    var q=new URLSearchParams({first_name:fn,email:em,phone:"+1"+pd,source:"Sano Med Spa - SMS Opt-In Page",
+      sms_consent:"yes",consent_timestamp:new Date().toISOString(),consent_text:CONSENT_TEXT,consent_url:location.href}).toString();
+    var u=LEAD_WEBHOOK+(LEAD_WEBHOOK.indexOf("?")>-1?"&":"?")+q;
+    try{if(!navigator.sendBeacon||!navigator.sendBeacon(u)){fetch(u,{method:"POST",mode:"no-cors",keepalive:true});}}catch(e){}
+  }
+  document.getElementById("card").innerHTML='<div class="ok"><div class="tick">\u2713</div>'+
+    '<h2 style="margin:6px 0 8px;">You\'re signed up.</h2>'+
+    '<p style="font-size:14px;color:#6b5f58;">We\'ll text you at '+ph.value+' about your appointments. Reply STOP at any time to opt out.</p></div>';
+});
+</script>
+</body>
+</html>
