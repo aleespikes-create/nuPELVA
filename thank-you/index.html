@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N453HG77');</script>
+<!-- End Google Tag Manager -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're Booked — Sano Med Spa</title>
+<script>
+/* If GHL redirects to this page INSIDE the booking iframe, break out so it loads
+   full-screen in first-party context, then fire Purchase only once (top window). */
+(function(){
+  if (window.top !== window.self) {
+    window.top.location.href = window.location.href;   // breakout; script re-runs at top
+    return;
+  }
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'purchase',
+    value: 99.00,
+    currency: 'USD',
+    items: [{ item_name: 'Nupelva Pelvic Floor Reset - First Session', price: 99.00, quantity: 1 }]
+  });
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#2B2C26;--sage:#7D7F70;--sage-deep:#5F6154;--cream:#F4F1EA;--blush:#E6DFD3;--muted:#585950;--line:#DBD4C7;--ok:#5F7355;
+--head:'Playfair Display',Georgia,serif;--body:'Inter',system-ui,sans-serif;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--body);background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;
+display:flex;min-height:100vh;align-items:center;justify-content:center;padding:24px}
+.card{max-width:560px;width:100%;background:#fff;border:1px solid var(--line);border-radius:18px;
+box-shadow:0 24px 70px rgba(43,44,38,.12);padding:40px 34px;text-align:center}
+.badge{width:64px;height:64px;border-radius:50%;background:rgba(95,115,85,.12);display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+.badge svg{width:30px;height:30px;stroke:var(--ok);fill:none;stroke-width:2.5}
+.kick{font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--sage);margin-bottom:10px}
+h1{font-family:var(--head);font-size:clamp(26px,5vw,34px);font-weight:600;line-height:1.12;margin-bottom:14px}
+h1 em{font-style:italic;color:var(--sage-deep)}
+p{font-size:16px;color:var(--muted);max-width:44ch;margin:0 auto 16px}
+.next{background:var(--blush);border-radius:14px;padding:18px 20px;text-align:left;margin:22px 0 4px}
+.next h2{font-family:var(--body);font-size:15px;font-weight:700;margin-bottom:12px;color:var(--ink)}
+.next li{list-style:none;font-size:14.5px;color:var(--ink);padding:7px 0 7px 26px;position:relative}
+.next li::before{content:"";position:absolute;left:0;top:12px;width:14px;height:14px;border-radius:50%;background:rgba(95,115,85,.18)}
+.foot{margin-top:22px;font-size:13px;color:var(--muted)}
+.foot b{color:var(--ink);font-family:var(--head);font-weight:600;font-size:15px}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N453HG77"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="card">
+  <div class="badge"><svg viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg></div>
+  <div class="kick">You're all set</div>
+  <h1>Your first session is <em>booked.</em></h1>
+  <p>Check your email and text messages — your confirmation and appointment details are on the way. We can't wait to see you at Sano.</p>
+
+  <div class="next">
+    <h2>What happens next</h2>
+    <ul>
+      <li>You'll get a confirmation email + text with your date, time, and address.</li>
+      <li>Come as you are — your session is completely painless and fully clothed.</li>
+      <li>We'll map your goals and, if it's a fit, your $99 credits toward your plan.</li>
+    </ul>
+  </div>
+
+  <p class="foot"><b>Sano Med Spa</b><br>314 Fountains Pkwy, Suite D · Fairview Heights, IL · (618) 661-0001</p>
+</div>
+</body>
+</html>
